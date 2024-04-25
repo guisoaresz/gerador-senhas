@@ -20,7 +20,6 @@ export function Passwords(){
     }, [focused])
 
     async function handleDeletePassword(item){
-        console.log(item);
         const passwords = await removeItem("@pass", item);
         setListPasswords(passwords)
     }
